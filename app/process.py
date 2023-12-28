@@ -10,10 +10,14 @@ api_token = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InNhcmE3IiwiZX
 model_path = os.path.join("models", "xgboost.joblib")
 model = joblib.load(model_path)
 crime_classes = {0:'Violation',1:"Misdemeanor",2:"Felony"}
-felony = open(r"app\crime_classes\felony.txt","r").read()
-mis = open(r"app\crime_classes\misdemeanor.txt","r").read()
-violation = open(r"app\crime_classes\violation.txt","r").read()
+felony_path = os.path.join("app", "crime_classes", "felony.txt")
+mis_path = os.path.join("app", "crime_classes", "misdemeanor.txt")
+violation_path = os.path.join("app", "crime_classes", "violation.txt")
 
+# Read the content of crime class files
+felony = open(felony_path, "r").read()
+mis = open(mis_path, "r").read()
+violation = open(violation_path, "r").read()
 def create_df(hour,month,day,latitude,longitude,place,vic_age,vic_race,vic_sex):
 
 
