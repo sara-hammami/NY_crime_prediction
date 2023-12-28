@@ -6,11 +6,11 @@ import joblib
 
 api_endpoint = 'https://locatenyc.io/arcgis/rest/services/locateNYC/v1/GeocodeServer/reverseGeocode?location='
 api_token = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InNhcmE3IiwiZXhwaXJlcyI6MTcwNjM2ODM5MTI5MSwicGVybWlzc2lvbnMiOiJiYXNpYyIsImlhdCI6MTcwMzc3NjM5MSwiZXhwIjoxNzA2MzY4MzkxfQ.YsENiyFi9pEulme0S22oUimOqHu-MqdnrBeDHsQBwXk"
-model = joblib.load(r"saved_modals/xgboost.joblib")
+model = joblib.load(r"saved_modals\xgboost.joblib")
 crime_classes = {0:'Violation',1:"Misdemeanor",2:"Felony"}
-felony = open(r"crime_classes/felony.txt","r").read()
-mis = open(r"crime_classes/misdemeanor.txt","r").read()
-violation = open(r"crime_classes/violation.txt","r").read()
+felony = open(r"app\crime_classes\felony.txt","r").read()
+mis = open(r"app\crime_classes\misdemeanor.txt","r").read()
+violation = open(r"app\crime_classes\violation.txt","r").read()
 
 def create_df(hour,month,day,latitude,longitude,place,vic_age,vic_race,vic_sex):
 
