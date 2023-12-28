@@ -78,7 +78,7 @@ red_box_style = """
             background-color:tomato;
             padding: 10px;
             border-radius: 5px;
-            margin-bottom:5px;
+            margin-bottom:10px;
             color: white;
             text-align: center;
         }
@@ -90,6 +90,8 @@ st.markdown(red_box_style, unsafe_allow_html=True)
 
 # Create the red box around the title
 st.markdown('<div class="red-box"><h1>New York Crime Prediction</h1></div>', unsafe_allow_html=True)
+st.markdown("### Select your location on the map by clicking.")
+
 gender, race, age, predict, date, hour, place= init()
 base_map = generateBaseMap()
 click = ClickForLatLng()
