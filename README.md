@@ -47,7 +47,8 @@ For data cleaning, exploratory data analysis (EDA), and modeling, we used the fo
 ![Web Application Screenshot](https://github.com/sara-hammami/NY_crime_prediction/blob/main/Capture.PNG)
 ## Contributors
 
-- [Sarra Hammai ]([link-to-your-profile](https://github.com/sara-hammami))
-- [contributer 2 ](link-to-contributor2-profile)
-- ...
+- [Sarra Hammai ] (https://github.com/sara-hammami)
+- [asma abidalli] (https://github.com/Asma-Ab)
+- [mariem mezghani]
+- [wissal oueslati] 
 
